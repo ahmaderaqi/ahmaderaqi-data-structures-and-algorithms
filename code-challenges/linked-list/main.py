@@ -8,7 +8,7 @@ if __name__ == "__main__":
     linked_list1.insert("B")
     linked_list1.insert("C")
     linked_list1.insert("D")
-    linked_list1.include("A")
+    linked_list1.insert_before("O","L")
 
     print(linked_list1)
 
