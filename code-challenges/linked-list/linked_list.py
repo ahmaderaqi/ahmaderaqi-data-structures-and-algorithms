@@ -1,6 +1,9 @@
 from node import Node
 
 class Linked_list:
+    """
+        in this class, we will add most methods that's related to the linked list such as insert, delete, search 
+        """
     def __init__(self) -> None:
         self.head=None
 
@@ -31,6 +34,9 @@ class Linked_list:
         return output
     
     def __repr__(self):
+        """
+        in this method, you should insert a value and it will be added at the begining of the linked list
+        """
 
         output = ""
         
@@ -76,6 +82,9 @@ class Linked_list:
         return True
     
     def append(self,value):
+        """
+        in this method, you should insert a value and it will be added at the end of the linked list
+        """
         node=Node(value)
         if self.head is None:
             self.head=node
@@ -86,6 +95,10 @@ class Linked_list:
             current.next = node
     
     def insert_before(self,value,new_value):
+        """
+        in this method, you should insert a value that's included in the linked list and another value to be added
+        before the spcific value and you will get the new linked list with the new value
+        """
         node= Node(new_value)
         if self.head is None:
             head = node
@@ -103,6 +116,10 @@ class Linked_list:
             node.next=current
     
     def insert_after(self,value,new_value):
+        """
+        in this method, you should insert a value that's included in the linked list and another value to be added
+        after the spcific value and you will get the new linked list with the new value
+        """
         node= Node(new_value)
         if self.head is None:
             head = node
@@ -122,6 +139,10 @@ class Linked_list:
             node.next=front
         
     def kth_value(self,k):
+        """
+        in this method, you should insert the index and you will get the value of this index
+        
+        """
         counter=0
         temp=self.head
         # calculate the length of the linked list
@@ -147,6 +168,9 @@ class Linked_list:
             return newval.valu
         
     def  middle_node(self):
+        """
+        in this method, we will get the middle value of the linked list
+        """
         counter=0
         temp=self.head
         if self.head==None:
