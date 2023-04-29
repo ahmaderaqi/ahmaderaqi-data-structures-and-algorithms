@@ -121,3 +121,57 @@ class Linked_list:
             current.next=node
             node.next=front
         
+    def kth_value(self,k):
+        counter=0
+        temp=self.head
+        # calculate the length of the linked list
+        while temp!=None:
+            counter+=1
+            temp=temp.next
+        ##############
+
+        # if self.head.next==None and k>0:
+        #     return "out of range, you have only one node and you can insert 0 only"
+        if k<0:
+            return "negative index is denied"
+        elif self.head==None:
+            return "empty list"
+        elif self.head.next==None and k==0:
+            return self.head.value
+        elif k>=counter:
+            return f"out of range, you have {counter} node and you can insert between 0 and {counter-1} only"
+        else:
+            newval=self.head
+            for i in range(counter-k-1):
+                newval=newval.next
+            return newval.valu
+        
+    def  middle_node(self):
+        counter=0
+        temp=self.head
+        if self.head==None:
+            return "empty list"
+        elif self.head.next==None:
+            return self.head.value
+        # calculate the length of the linked list
+        while temp!=None:
+            counter+=1
+            temp=temp.next
+        ##############
+        newval=self.head
+        if counter%2==1:
+            cc=int(counter/2)
+            for i in range(cc):
+                newval=newval.next
+            return newval.value
+        else:
+            cc=int(counter/2)
+            for i in range(cc):
+                newval=newval.next
+            return newval.value
+
+
+
+
+
+
