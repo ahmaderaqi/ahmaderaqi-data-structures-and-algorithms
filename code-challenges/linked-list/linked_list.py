@@ -193,9 +193,79 @@ class Linked_list:
             for i in range(cc):
                 newval=newval.next
             return newval.value
+    
+    
+        
 
 
 
 
+# def linked_list_zip(ll1,ll2):
+#         if not ll1:
+#             return ll2
+#         if not ll2:
+#             return ll1
+#         temp1=ll1.head
+#         temp11=ll1.head
+
+#         temp2=ll2.head
+#         temp22=ll2.head
+
+#         while temp1 and temp2:
+#             temp1.next=temp2
+#             temp2.next=temp11.next
+
+#             temp1=temp11.next
+#             temp11=temp1
+
+#             temp2=temp22.next
+#             temp22=temp2
 
 
+def linked_list_zip(ll1, ll2):
+    if not ll1:
+        return ll2
+    if not ll2:
+        return ll1
+
+    temp1 = ll1.head
+    temp2 = ll2.head
+
+    while temp1 and temp2:
+        next1 = temp1.next
+        next2 = temp2.next
+
+        temp1.next = temp2
+        temp2.next = next1
+
+        temp1 = next1
+        temp2 = next2
+
+    if temp2:
+        temp1.next = temp2
+
+    return ll1
+
+
+# def zip_lists(l1, l2):
+#     if not l1:
+#         return l2
+#     if not l2:
+#         return l1
+
+#     # create a new linked list by alternating between nodes from l1 and l2
+#     head = l1
+#     tail = head.next
+#     curr = l2
+#     while tail and curr:
+#         head.next = curr
+#         curr = curr.next
+#         head.next.next = tail
+#         head = tail
+#         tail = head.next
+
+#     # append remaining nodes from l1 or l2, if any
+#     if not tail:
+#         head.next = curr
+
+#     return l1
