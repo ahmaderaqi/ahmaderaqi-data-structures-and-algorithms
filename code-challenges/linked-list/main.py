@@ -1,5 +1,4 @@
 from linked_list import Linked_list
-from linked_list import linked_list_zip
 
 
 from node import Node
@@ -14,10 +13,10 @@ if __name__ == "__main__":
     # linked_list1.insert(5)
     # linked_list1.insert(7)
 
-    linked_list2.insert(2)
-    linked_list2.insert(4)
-    linked_list2.insert(6)
-    linked_list2.insert(8)
+    # linked_list2.insert(2)
+    # linked_list2.insert(4)
+    # linked_list2.insert(6)
+    # linked_list2.insert(8)
     
     # linked_list1.insert_before("O","L")
     # linked_list1.insert("g")
@@ -31,9 +30,9 @@ if __name__ == "__main__":
     print(linked_list1)
     print(linked_list2)
 
-    ziper=linked_list_zip(linked_list1,linked_list2)
-    print(ziper)
-
+    ziper=Linked_list.linked_list_zip(linked_list1,linked_list2)
+    print((ziper))
+    
     # # Create the first linked list: 1 -> 2 -> 3
     # l1 = Node(1)
     # l1.next = Node(2)

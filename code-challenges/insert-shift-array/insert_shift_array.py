@@ -2,6 +2,7 @@ final_arr=[]
 import array
 import math
 def insertShiftArray(arr,number):
+    
     for i in range(math.ceil(len(arr)/2)+1):
         if(i== math.ceil(len(arr)/2) ):
             final_arr.append(number)

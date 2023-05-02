@@ -194,8 +194,32 @@ class Linked_list:
                 newval=newval.next
             return newval.value
     
+    def linked_list_zip(ll1, ll2):
+        if not ll1:
+            return ll2
+        if not ll2:
+            return ll1
+
+        temp1 = ll1.head
+        temp2 = ll2.head
+
+        while temp1 and temp2:
+            next1 = temp1.next
+            next2 = temp2.next
+
+            temp1.next = temp2
+            temp2.next = next1
+
+            temp1 = next1
+            temp2 = next2
+
+        if temp2:
+            temp1.next = temp2
+
+        return str(ll1) 
     
-        
+
+       
 
 
 
@@ -222,29 +246,7 @@ class Linked_list:
 #             temp22=temp2
 
 
-def linked_list_zip(ll1, ll2):
-    if not ll1:
-        return ll2
-    if not ll2:
-        return ll1
 
-    temp1 = ll1.head
-    temp2 = ll2.head
-
-    while temp1 and temp2:
-        next1 = temp1.next
-        next2 = temp2.next
-
-        temp1.next = temp2
-        temp2.next = next1
-
-        temp1 = next1
-        temp2 = next2
-
-    if temp2:
-        temp1.next = temp2
-
-    return ll1
 
 
 # def zip_lists(l1, l2):
