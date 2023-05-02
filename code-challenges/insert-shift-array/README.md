@@ -1,15 +1,22 @@
 # insert shift array
-insert a value in an index without using any built-in method
-
+insert an element at the middle of the array
 ## Whiteboard Process
-![lab3](https://user-images.githubusercontent.com/118004544/232253132-e7810453-4807-4149-a996-b402dd00d3e9.jpg)
+![lab2](https://user-images.githubusercontent.com/118004544/235322103-9e321dca-21a8-469d-a459-65642b6a2d27.jpg)
+
 
 
 
 ## Approach & Efficiency
-Problem domain
+insert an element at the middle of the array
 
-inserting an element in the middle of the array without using any built-in method
+Algorithm
+1- dividing the array into half
+2- add the element for the first half
+3- merge the two arrays
+
+Big O
+time complexity is O(1)
+space complexity is O(1)
 
 ## Solution
-|Code challenge5  |    [code1](./insert_shift_array.py)
+|Code challenge2  |    [code1](./insert_shift_array.py)
