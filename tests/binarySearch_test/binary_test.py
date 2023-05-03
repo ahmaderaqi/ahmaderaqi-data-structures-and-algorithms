@@ -1,4 +1,4 @@
-from binary_serch import binary_search
+from code_challenges.array_binary_search.binary_serch import binary_search
 def test_one():
     arr=[0,1,2,3,4,5,6,7,8]
     expected = 2
@@ -16,4 +16,3 @@ def test_three():
     expected = 2
     actual = binary_search(arr,2)
     assert expected == actual
-
