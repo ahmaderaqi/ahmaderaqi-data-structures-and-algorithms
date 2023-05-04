@@ -7,6 +7,7 @@ A queue, on the other hand, follows the First-In-First-Out (FIFO) principle
 ![images](https://user-images.githubusercontent.com/118004544/236326279-537f9c2a-b190-4aa7-b850-86c707ea07a1.png)
 
 
+![lab10](https://user-images.githubusercontent.com/118004544/236330163-3735cc26-94ee-46c5-9bde-b61ce090c21c.jpg)
 
 
 ## Approach & Efficiency
