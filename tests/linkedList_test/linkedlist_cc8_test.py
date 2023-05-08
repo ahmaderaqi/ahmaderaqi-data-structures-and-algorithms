@@ -8,7 +8,7 @@ def test_cc1_1():
     linked_list1.insert(3)
     linked_list1.insert(5)
     linked_list1.insert(7)
-
+    
     linked_list2.insert(2)
     linked_list2.insert(4)
     linked_list2.insert(6)

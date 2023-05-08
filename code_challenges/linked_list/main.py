@@ -8,30 +8,32 @@ if __name__ == "__main__":
     linked_list1 = Linked_list()
     linked_list2 = Linked_list()
 
-    # linked_list1.insert(1)
-    # linked_list1.insert(3)
-    # linked_list1.insert(5)
-    # linked_list1.insert(7)
+    linked_list1.insert(1)
+    linked_list1.insert(3)
+    linked_list1.insert(5)
+    linked_list1.insert(7)
+    print(linked_list1)
 
     # linked_list2.insert(2)
     # linked_list2.insert(4)
     # linked_list2.insert(6)
     # linked_list2.insert(8)
     
-    # linked_list1.insert_before("O","L")
+    linked_list1.insert_before(3,"L")
     # linked_list1.insert("g")
+    print(linked_list1)
 
     # print(linked_list1)
-
+    
     # indexs=linked_list1.kth_value(-2)
     # indexs=linked_list1.middle_node()
 
 
-    print(linked_list1)
-    print(linked_list2)
+    # print(linked_list1)
+    # print(linked_list2)
 
-    ziper=Linked_list.linked_list_zip(linked_list1,linked_list2)
-    print((ziper))
+    # ziper=Linked_list.linked_list_zip(linked_list1,linked_list2)
+    # print((ziper))
     
     # # Create the first linked list: 1 -> 2 -> 3
     # l1 = Node(1)

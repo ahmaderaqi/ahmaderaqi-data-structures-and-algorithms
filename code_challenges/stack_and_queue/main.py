@@ -1,6 +1,6 @@
 from queue import Queue
-from stack import Stack
-
+from code_challenges.stack_and_queue.stack_file import Stack
+from stack_queue_pseudo_file import stack_queue_pseudo
 # queue1 = Queue()
 
 # queue1.enqueue(1)
@@ -12,18 +12,18 @@ from stack import Stack
 # print(queue1.dequeue())
 # print(queue1.dequeue())
 
-stack1 = Stack()
+stack1 = stack_queue_pseudo()
 
-stack1.push(1)
-stack1.push(2)
-stack1.push(3)
+stack1.enqueue(1)
+stack1.enqueue(2)
+stack1.enqueue(3)
 
-print(stack1.pop())
+print(stack1.dequeue())
 
 
 
-print("size",stack1.get_size())
-print(stack1.pop())
-print(stack1.pop())
-print(stack1.pop())
-print("size",stack1.get_size())
+# print("size",stack1.get_size())
+# print(stack1.pop())
+# print(stack1.pop())
+# print(stack1.pop())
+# print("size",stack1.get_size())

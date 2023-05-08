@@ -1,5 +1,5 @@
-from code_challenges.stack_and_queue.stack import Stack
-from code_challenges.stack_and_queue.queue import Queue
+from code_challenges.stack_and_queue.stack_file import Stack
+from code_challenges.stack_and_queue.queue_file import Queue
 
 
 def test_push_empty_stack():

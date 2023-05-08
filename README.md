@@ -1,9 +1,12 @@
 # ahmaderaqi-data-structures-and-algorithms
-# revese array
-### Whiteboard Process
-   ![Screenshot (3037)](https://user-images.githubusercontent.com/118004544/230079223-0d91f626-fbd1-4c81-9692-2b9e226b65dd.png)
-
-
-# insertShiftArray
-### Whiteboard Process
-![Screenshot (3038)](https://user-images.githubusercontent.com/118004544/230084221-c9a17f55-b376-438d-8f39-7bcc9be5493e.png)
+| code challenge      | link
+| :---                      |   :----:
+|class-01                   | [class-01](./code_challenges/reverse-array/readme.md)
+|class-02                   | [class-02](./code_challenges/insert_shift_array/README.md)
+|class-03                   | [class-03](./code_challenges/array_binary_search/README.md)
+|class-05                   | [class-05](./code_challenges/linked_list/README.md)
+|class-06                   | [class-06](./code_challenges/linked_list/README.md)
+|class-07                   | [class-07](./code_challenges/linked_list/readme_of_cc7/README.MD)
+|class-08                   | [class-08](./code_challenges/linked_list/readme_of_cc8/readme.md)
+|class-10                   | [class-10](./code_challenges/stack_and_queue/readme.md)
+|class-11                   | [class-11](./class-11.md)
