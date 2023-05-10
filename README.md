@@ -10,3 +10,4 @@
 |class-08                   | [class-08](./code_challenges/linked_list/readme_of_cc8/readme.md)
 |class-10                   | [class-10](./code_challenges/stack_and_queue/readme.md)
 |class-11                   | [class-11](./class-11.md)
+|class-12                   | [class-11](./code_challenges/stack_and_queue/readme_animal_shelter/readme.md)
