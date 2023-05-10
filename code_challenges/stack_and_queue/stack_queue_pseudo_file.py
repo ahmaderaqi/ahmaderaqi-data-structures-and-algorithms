@@ -1,4 +1,4 @@
-from code_challenges.stack_and_queue.stack_file import Stack
+from stack_file import Stack
 class stack_queue_pseudo:
     """
     in this class we are using two stacks to implement a queue
