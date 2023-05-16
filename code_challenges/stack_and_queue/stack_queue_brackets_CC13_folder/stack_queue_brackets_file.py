@@ -47,21 +47,21 @@ def validate_brackets_2(str):
     for i in str2:
         # print(i)
         if i =='(' or i=='[' or i=='{':
-            
             stack.push(i)
         if i==')':
-           result= (stack.pop_specific_value('('))
-           if result is None:
-               return False
-            
+            if stack.pop_specific_value('(') is None:
+                return False
         elif i==']':
-            result= (stack.pop_specific_value('['))
-            if result is None:
-               return False
+            if stack.pop_specific_value('[') is None:
+                return False
         elif i=='}':
-            result= (stack.pop_specific_value('{'))
-            if result is None:
-               return False
+            if stack.pop_specific_value('{') is None:
+                return False
+            
+    if stack.get_size()==0:
+        return True
+    else:
+        return False
 
 strr="hello mr. (ahm)[a)d"
 result=validate_brackets(strr)
