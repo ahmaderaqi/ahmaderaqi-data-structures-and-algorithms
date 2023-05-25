@@ -15,7 +15,8 @@ Algorithm
 
 else if the value is less than the middle go to the left and repeat step 1,2
 
-Big O
+# Big O
 time complexity is O(logN)
+space complexity is O(1)
 ## Solution
 |Code challenge3  |    [code1](./binary_serch.py)
