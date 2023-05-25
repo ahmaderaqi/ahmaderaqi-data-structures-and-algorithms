@@ -81,6 +81,15 @@ class Linked_list:
         temp = None
         return True
     
+    def to_string(self):
+        result = ""
+        current = self.head
+        while current:
+            result += f"{{ {current.value} }} -> "
+            current = current.next
+        result += "NULL"
+        return result
+    
     def append(self,value):
         """
         in this method, you should insert a value and it will be added at the end of the linked list
