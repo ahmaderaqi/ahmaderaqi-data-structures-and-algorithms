@@ -33,3 +33,24 @@ class Stack:
 
     def is_empty(self):
         return self.size == 0
+    
+    def pop_specific_value(self,val):
+        if self.top is None:
+            return None
+        value=self.top.value
+        if value==val:
+            self.size -= 1
+            self.top=self.top.next
+            return val
+        temp1=self.top
+        temp2=self.top.next
+        while temp2 is not None:
+            if temp2.value==val:
+                self.size -= 1
+                temp1.next=temp2.next
+                temp2.next=None
+                return temp2.value
+            temp1=temp1.next
+            temp2=temp2.next
+        return False
+        
