@@ -6,8 +6,8 @@ class Movie:
 
 
 def sort_by_year(movies):
-    sorted_movies = sorted(movies, key=lambda movie: movie.year, reverse=True)
-    return sorted_movies
+    sort = sorted(movies, key=lambda movie: movie.year, reverse=True)
+    return sort
 
 
 def sort_by_title(movies):
