@@ -9,5 +9,7 @@
 |class-07                   | [class-07](./code_challenges/linked_list/readme_of_cc7/README.MD)
 |class-08                   | [class-08](./code_challenges/linked_list/readme_of_cc8/readme.md)
 |class-10                   | [class-10](./code_challenges/stack_and_queue/readme.md)
-|class-11                   | [class-11](./class-11.md)
-|class-12                   | [class-11](./code_challenges/stack_and_queue/readme_animal_shelter/readme.md)
+|class-11                   | [class-11](./code_challenges/stack_and_queue/readme_stack_queue_pseudo/readme.md)
+|class-12                   | [class-12](./code_challenges/stack_and_queue/readme_animal_shelter/readme.md)
+|class-13                   | [class-13](./code_challenges/stack_and_queue/stack_queue_brackets_CC13_folder/readme.md)
+
