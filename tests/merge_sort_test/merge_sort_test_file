@@ -1,0 +1,38 @@
+import pytest
+
+# Import the merge_sort function from the module where it is defined
+from your_module_name import merge_sort
+
+def test_merge_sort():
+    # Test case 1: Sorting an empty list should return an empty list
+    arr = []
+    sorted_arr = merge_sort(arr)
+    assert sorted_arr == []
+
+    # Test case 2: Sorting a list with a single element should return the same list
+    arr = [5]
+    sorted_arr = merge_sort(arr)
+    assert sorted_arr == [5]
+
+    # Test case 3: Sorting a list with multiple elements
+    arr = [5, 2, 8, 12, 3]
+    sorted_arr = merge_sort(arr)
+    assert sorted_arr == [2, 3, 5, 8, 12]
+
+    # Test case 4: Sorting a list that is already sorted
+    arr = [1, 2, 3, 4, 5]
+    sorted_arr = merge_sort(arr)
+    assert sorted_arr == [1, 2, 3, 4, 5]
+
+    # Test case 5: Sorting a list with repeated elements
+    arr = [5, 2, 8, 2, 3, 5]
+    sorted_arr = merge_sort(arr)
+    assert sorted_arr == [2, 2, 3, 5, 5, 8]
+
+    # Test case 6: Sorting a large list in descending order
+    arr = list(range(10000, 0, -1))
+    sorted_arr = merge_sort(arr)
+    assert sorted_arr == list(range(1, 10001))
+
+if __name__ == '__main__':
+    pytest.main()
