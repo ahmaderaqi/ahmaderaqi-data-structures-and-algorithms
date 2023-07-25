@@ -48,3 +48,28 @@ def test_str(create_graph, capsys):
     graph.add_edge(vertex_b, vertex_c, 5)
     graph_str = str(graph)
     assert f'{vertex_a} -> {vertex_b} -----> \n{vertex_b} -> {vertex_a} -----> {vertex_c} -----> \n{vertex_c} -> {vertex_b} -----> \n{vertex_d} -> ' in graph_str
+
+
+# code challenge 36
+
+def test_breadth_first(create_graph, capsys):
+    graph, vertex_a, vertex_b, vertex_c, vertex_d = create_graph
+    graph.add_edge(vertex_a, vertex_b)
+    graph.add_edge(vertex_b, vertex_c, 5)
+    graph.add_edge(vertex_c, vertex_d, 3)
+
+    graph.breadth_first(vertex_a)
+    captured = capsys.readouterr()
+    assert captured.out == "A B C D "
+
+    graph.breadth_first(vertex_c)
+    captured = capsys.readouterr()
+    assert captured.out == "C B D "
+
+    graph.breadth_first(vertex_d)
+    captured = capsys.readouterr()
+    assert captured.out == "D C "
+
+    graph.breadth_first(vertex_b)
+    captured = capsys.readouterr()
+    assert captured.out == "B A C D "

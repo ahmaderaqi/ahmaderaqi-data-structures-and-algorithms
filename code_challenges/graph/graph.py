@@ -40,6 +40,22 @@ class Graph:
         return "does not exist"
     def size(self):
         return len(self.adj_list.keys())
+
+    # Code Challenge 36
+    def breadth_frist(self,node):
+        visited=[]
+        explored=[]
+        visited.append(node)
+        explored.append(node)
+
+        while explored:
+            n=explored.pop()
+            print(n, space=" ")
+            
+            for neighbours in self.adj_list[node.value]:
+                if neighbours  not in visited:
+                    visited.append(neighbours)
+                    explored.append(neighbours)
     def __str__(self):
         output = ''
         for vertex in self.adj_list.keys():
