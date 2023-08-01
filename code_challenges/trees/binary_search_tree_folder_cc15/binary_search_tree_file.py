@@ -1,3 +1,4 @@
+from collections import deque
 class Node:
     def __init__(self, value):
         self.value = value
@@ -41,6 +42,27 @@ class BinaryTree:
             self._post_order_recursive(node.right, result)
             result.append(node.value)
 
+    # finding the maximum value in the tree cc16
+    def find_maximum_value(self):
+        if self.root is None:
+            raise ValueError("Tree is empty")
+
+        return self._find_maximum_value_recursive(self.root)
+
+    def _find_maximum_value_recursive(self, node):
+        if node is None:
+            return float('-inf')
+
+        max_value = node.value
+        left_max = self._find_maximum_value_recursive(node.left)
+        right_max = self._find_maximum_value_recursive(node.right)
+
+        if left_max > max_value:
+            max_value = left_max
+        if right_max > max_value:
+            max_value = right_max
+
+        return max_value
 
 
 
@@ -82,3 +104,19 @@ class BinarySearchTree:
 
 
 
+# breadth_first_traversal cc17
+def breadth_first_traversal(root):
+    if not root:
+        return
+    
+    queue = deque()
+    queue.append(root)
+    
+    while queue:
+        node = queue.popleft()
+        print(node.value, end=' ')
+        
+        if node.left:
+            queue.append(node.left)
+        if node.right:
+            queue.append(node.right)
