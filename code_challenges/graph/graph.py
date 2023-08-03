@@ -56,6 +56,29 @@ class Graph:
                 if neighbours  not in visited:
                     visited.append(neighbours)
                     explored.append(neighbours)
+    
+    
+
+    def depth_first(self, node):
+        visited = []
+        explored = []
+        visited.append(node)
+        explored.append(node)
+
+        while explored:
+            n = explored.pop()
+            print(n, end=" ")
+
+            for neighbour in self.adj_list[n.value]:
+                if neighbour not in visited:
+                    visited.append(neighbour)
+                    explored.append(neighbour)
+
+    def exist(self,node1,node2):
+        if node1 in self.adj_list[node2.value]:
+            return True
+        else:
+            return False
     def __str__(self):
         output = ''
         for vertex in self.adj_list.keys():
